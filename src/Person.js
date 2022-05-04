@@ -1,11 +1,12 @@
 import React from "react" 
+import jeremy from './images/image-jeremy.png'
 
 export default function Person(props) {
 
     return (
         <div className="grid-item person">
           <div className="jeremy">
-            <img className="headshot" src='./images/image-jeremy.png' alt="Jeremy headshot" />
+            <img className="headshot" src={jeremy} alt="Jeremy headshot" />
             <div>
               <p>report for</p>
               <h1>Jeremy <span className="last">Robson</span></h1>

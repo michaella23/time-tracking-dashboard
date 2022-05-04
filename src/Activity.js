@@ -1,5 +1,5 @@
 import React from "react"
-
+import ellipsis from "./images/icon-ellipsis.svg"
 
 export default function Activity(props) {
 
@@ -14,7 +14,7 @@ export default function Activity(props) {
                 <div className="card">
                     <div className="activity">
                         <p>{title}</p>
-                        <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
+                        <img src={ellipsis} alt="ellipsis" />
                     </div>
                     <div className="time">
                         <h1 id="activity-time">{timeframe.current} hrs</h1>

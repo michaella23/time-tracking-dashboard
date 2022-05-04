@@ -3,8 +3,8 @@ import jeremy from './images/image-jeremy.png'
 
 export default function Person(props) {
 
-  //const buttonRef = React.useRef(null)
-  //React.useEffect(() => buttonRef.current.click(), [])
+  const buttonRef = React.useRef(null)
+  React.useEffect(() => buttonRef.current.click(), [])
 
     return (
         <div className="grid-item person">
@@ -16,9 +16,9 @@ export default function Person(props) {
             </div>
           </div>
           <div className="bottom">  
-            <button value="daily" onClick={props.renderValues}>daily</button> 
-            <button value="weekly" onClick={props.renderValues}>weekly</button>
-            <button value="monthly" onClick={props.renderValues}>monthly</button>
+            <button value="daily" ref={buttonRef} onClick={props.renderDaily}>daily</button> 
+            <button value="weekly" onClick={props.renderWeekly}>weekly</button>
+            <button value="monthly" onClick={props.renderMonthly}>monthly</button>
           </div>
       </div>
     )

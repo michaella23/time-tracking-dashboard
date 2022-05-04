@@ -9,6 +9,10 @@ const [timeFrame, setTimeFrame] = React.useState([])
 
 let activitiesArray = []
 
+
+// rendering Daily view on load
+React.useEffect(() => setDaily, [])
+
 function setDaily() {
   data.forEach(({title, image, timeframes}) => {
     let activityObj = {
@@ -21,11 +25,6 @@ function setDaily() {
   setTimeFrame(activitiesArray)
 }
 
-// rendering Daily view on load
-React.useEffect(() => setDaily, [])
-
-
-// this function allows display of dynamic values based on the event target button value
 function setValues(event) {
   data.forEach(({title, image, timeframes}) => { // destructured 'activity' object
     // since it's destructured, I don't have the repetition of activity.title, activity.image, etc. in the code below
@@ -42,6 +41,8 @@ function setValues(event) {
   })
   setTimeFrame(activitiesArray)
 }
+
+
 
   return (
       <main className='grid'>

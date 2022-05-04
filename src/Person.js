@@ -3,6 +3,9 @@ import jeremy from './images/image-jeremy.png'
 
 export default function Person(props) {
 
+  //const buttonRef = React.useRef(null)
+  //React.useEffect(() => buttonRef.current.click(), [])
+
     return (
         <div className="grid-item person">
           <div className="jeremy">

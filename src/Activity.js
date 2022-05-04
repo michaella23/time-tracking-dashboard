@@ -1,5 +1,6 @@
 import React from "react"
 
+
 export default function Activity(props) {
 
     // need conditional rendering from daily, weekly, monthly, that can plug into the object notation

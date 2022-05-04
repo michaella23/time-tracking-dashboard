@@ -3,6 +3,7 @@ import Person from "./Person"
 import Activity from "./Activity"
 import data from "./data.json"
 
+
 function App() {
 
 const [timeFrame, setTimeFrame] = React.useState([]) 

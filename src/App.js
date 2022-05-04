@@ -22,7 +22,7 @@ function setDaily() {
 }
 
 // rendering Daily view on load
-React.useEffect(() => setDaily)
+React.useEffect(() => setDaily, [])
 
 
 // this function allows display of dynamic values based on the event target button value

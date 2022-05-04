@@ -1,5 +1,12 @@
+import work from "./images/icon-work.svg"
+import play from "./images/icon-play.svg"
+import study from "./images/icon-study.svg"
+import exercise from "./images/icon-exercise.svg"
+import social from "./images/icon-social.svg"
+import selfcare from "./images/icon-self-care.svg"
 
-[
+
+export default [
   {
     "title": "work",
     "timeframes": {
@@ -16,7 +23,7 @@
         "previous": 128
       }
     },
-    "image": "./images/icon-work.svg"
+    "image": work
   },
   {
     "title": "play",
@@ -34,7 +41,7 @@
         "previous": 29
       }
     },
-    "image": "./images/icon-play.svg"
+    "image": play
   },
   {
     "title": "study",
@@ -52,7 +59,7 @@
         "previous": 19
       }
     },
-    "image": "./images/icon-study.svg"
+    "image": study
   },
   {
     "title": "exercise",
@@ -70,7 +77,7 @@
         "previous": 18
       }
     },
-    "image": "./images/icon-exercise.svg"
+    "image": exercise
   },
   {
     "title": "social",
@@ -88,7 +95,7 @@
         "previous": 23
       }
     },
-    "image": "./images/icon-social.svg"
+    "image": social
   },
   {
     "title": "self-care",
@@ -106,6 +113,6 @@
         "previous": 11
       }
     },
-    "image": "./images/icon-self-care.svg"
+    "image": selfcare
   }
 ]

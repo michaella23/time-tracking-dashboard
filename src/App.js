@@ -1,8 +1,7 @@
 import React from 'react'
 import Person from "./Person"
 import Activity from "./Activity"
-import data from "./data.json"
-
+import data from "./data.js"
 
 function App() {
 
